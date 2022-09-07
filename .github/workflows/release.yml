@@ -34,7 +34,7 @@ jobs:
                   publish: yarn release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+                  NPM_PUBLISH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
             - name: Discord notification
               if: steps.changesets.outputs.published == 'true'
