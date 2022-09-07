@@ -1,0 +1,12 @@
+{
+    "extends": "expo/tsconfig.base",
+    "compilerOptions": {
+        "jsx": "react-native",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "paths": {
+            "reusable-react-native-components/*": ["../src/*"]
+        },
+        "strict": true
+    }
+}

@@ -1,0 +1,62 @@
+import { ArgsTable, Canvas, ColorItem, ColorPalette, Meta, Story } from '@storybook/addon-docs';
+import { View } from 'react-native';
+import { TextBase as BaseText } from '..';
+
+<Meta title="Components/BaseText" component={BaseText} />
+
+export const BaseTextTemplate = (args) => (
+    <View style={{ backgroundColor: '#FFFFFF', padding: 30 }}>
+        <BaseText {...args} />
+    </View>
+);
+
+# BaseText
+
+export const baseTextArgs = {
+    children: 'Base Text',
+    containerStyle: { backgroundColor: 'lime' },
+    style: { color: 'white' },
+};
+
+export const headingOneArgs = {
+    children: 'Heading',
+    containerStyle: { backgroundColor: 'yellow' },
+    style: { fontSize: 24, fontWeight: 'bold', color: 'white' },
+};
+
+An BaseText is normal text component with custom styles and container styles
+
+## Usage
+
+```jsx
+import * as React from 'react';
+import { TextBase as BaseText } from 'reusable-react-native-components/dist/components';
+
+const BaseTextExample = () => (
+    <BaseText containerStyle={{}} style={{}}>
+        Base Text
+    </BaseText>
+);
+
+export default BaseTextExample;
+```
+
+## BaseText
+
+<Canvas>
+    <Story name="BaseText" args={{ ...baseTextArgs }}>
+        {BaseTextTemplate.bind({})}
+    </Story>
+</Canvas>
+
+### HeadingOne
+
+<Canvas>
+    <Story name="HeadingOne" args={{ ...headingOneArgs }}>
+        {BaseTextTemplate.bind({})}
+    </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable of={BaseText} />

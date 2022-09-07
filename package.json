@@ -1,0 +1,118 @@
+{
+    "name": "reusable-react-native-components",
+    "version": "0.1.16",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "typings": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "node": "./dist/index.js",
+            "require": "./dist/index.js",
+            "default": "./dist/index.mjs"
+        },
+        "./components": {
+            "node": "./dist/components/index.js",
+            "require": "./dist/components/index.js",
+            "default": "./dist/components/index.mjs"
+        },
+        "./primitives": {
+            "node": "./dist/primitives/index.js",
+            "require": "./dist/primitives/index.js",
+            "default": "./dist/primitives/index.mjs"
+        },
+        "./utils": {
+            "node": "./dist/utils/index.js",
+            "require": "./dist/utils/index.js",
+            "default": "./dist/utils/index.mjs"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/maheshmuttinti/reusable-react-native-components.git"
+    },
+    "author": {
+        "name": "maheshmuttinti",
+        "email": "maheshmuttinti@betalectic.com",
+        "url": "https://github.com/maheshmuttinti"
+    },
+    "license": "MIT",
+    "peerDependencies": {
+        "react": "^17.0.2 || ^18.0.0",
+        "react-native": ">=0.68.2",
+        "react-native-svg": "^12.3.0",
+        "react-native-web": "^0.18.6"
+    },
+    "keywords": [
+        "reusable",
+        "reusable-rn-components",
+        "reusable-react-native-components",
+        "rn-reusable-components",
+        "reusejs-react-native-components"
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.18.9",
+        "@babel/preset-env": "^7.18.6",
+        "@changesets/cli": "^2.23.2",
+        "@storybook/addon-actions": "^6.5.10",
+        "@storybook/addon-essentials": "^6.5.10",
+        "@storybook/addon-interactions": "^6.5.10",
+        "@storybook/addon-links": "^6.5.10",
+        "@storybook/addon-viewport": "^6.5.10",
+        "@storybook/builder-webpack5": "^6.5.10",
+        "@storybook/manager-webpack5": "^6.5.10",
+        "@storybook/react": "^6.5.10",
+        "@storybook/testing-library": "^0.0.13",
+        "@types/react": "17.0.38",
+        "@types/react-native": "^0.69.3",
+        "@typescript-eslint/eslint-plugin": "^5.30.6",
+        "@typescript-eslint/parser": "^5.30.6",
+        "babel-loader": "^8.2.5",
+        "chromatic": "^6.7.3",
+        "eslint": "^8.19.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-typescript": "^17.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsx-a11y": "^6.6.0",
+        "eslint-plugin-react": "^7.30.1",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-storybook": "^0.6.3",
+        "prettier": "^2.7.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-native": "^0.69.3",
+        "react-native-svg": "^12.4.3",
+        "react-native-web": "^0.18.7",
+        "require-from-string": "^2.0.2",
+        "tsup": "^6.2.0",
+        "typescript": "^4.7.4",
+        "webpack": "^5.74.0"
+    },
+    "resolutions": {
+        "@types/react": "^17.0.47"
+    },
+    "scripts": {
+        "run:android": "cd rnComponentsTestExamples && yarn android",
+        "run:ios": "cd rnComponentsTestExamples && yarn ios",
+        "build": "tsup",
+        "format": "prettier --write src/**/*.{ts,tsx}",
+        "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+        "clean": "rm -rf node_modules && cd example && rm -rf node_modules",
+        "changeset": "changeset",
+        "version-packages": "changeset version",
+        "release": "yarn build && changeset publish",
+        "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --quiet --fix",
+        "storybook": "start-storybook -p 6006",
+        "build:storybook": "build-storybook",
+        "chromatic": "npx chromatic"
+    },
+    "dependencies": {
+        "@react-native-community/datetimepicker": "^6.3.0"
+    },
+    "bugs": {
+        "url": "https://github.com/maheshmuttinti/reusable-react-native-components/issues"
+    },
+    "readme": "ERROR: No README data found!",
+    "homepage": "https://github.com/maheshmuttinti/reusable-react-native-components#readme",
+    "_id": "reusable-react-native-components@0.1.15"
+}

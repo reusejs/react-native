@@ -1,0 +1,40 @@
+{
+    "extends": [
+        "airbnb",
+        "airbnb/hooks",
+        "airbnb-typescript",
+        "prettier",
+        "plugin:import/recommended",
+        "plugin:storybook/recommended"
+    ],
+    "env": {
+        "jest": true,
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "project": ["./tsconfig.json"]
+    },
+    "rules": {
+        "@typescript-eslint/ban-ts-comment": "error",
+        "@typescript-eslint/prefer-optional-chain": "error",
+        "prefer-template": "error",
+        "no-case-declarations": "error",
+        "no-param-reassign": "error",
+        "import/no-extraneous-dependencies": "off",
+        "import/no-mutable-exports": "off",
+        "import/no-unresolved": "off",
+        "import/prefer-default-export": "off",
+        "react/function-component-definition": "off",
+        "react/jsx-no-useless-fragment": "error",
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-uses-vars": "error",
+        "react/require-default-props": "off"
+    }
+}
