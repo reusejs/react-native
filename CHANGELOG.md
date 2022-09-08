@@ -1,5 +1,11 @@
 # reusable-react-native-components
 
+## 0.0.2
+
+### Patch Changes
+
+-   76e3e5c: Publishing via changeset
+
 ## 0.1.16
 
 ### Patch Changes
